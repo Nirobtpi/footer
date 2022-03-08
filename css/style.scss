@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+$bgColor:#011C39;
+$fontColor:#748293;
+$fontWhiteColor:#fff;
+$spanColor:#1CA2D2;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+footer{
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 80px 50px;
+    background: $bgColor;
+
+    .footer-widget{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .single-footer{
+            flex-basis: 23.33%;
+            // margin-right: 20px;
+
+            h2{
+                color: $fontWhiteColor;
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                span{
+                    color: $spanColor;
+                }
+            }
+
+            p{
+                color: $fontColor;
+                font-size: 14px;
+                margin: 20px 0;
+                letter-spacing: 1;
+            }
+
+            .socail-icons{
+                width: 50%;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    li{
+                        a{
+                            i{
+                                display: block;
+                                background: #333;
+                                width: 30px;
+                                height: 30px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 20px;
+                                color: $fontWhiteColor;
+                                font-size: 12px;
+                                transition: 0.3s all linear;
+
+                            }
+                        }
+                    }
+                }
+            }
+            h3{
+                color: $fontWhiteColor;
+            }
+            ul{
+                margin: 20px 0;
+                li{
+                    margin-bottom: 20px;
+                    a{
+                        color: $fontColor;
+                        font-size: 14px;
+                        font-weight: 500;
+                        transition: 0.3s all linear;
+                    }
+                    a:hover{
+                        color: #ddd;
+                    }
+                }
+            }
+                .text-bold{
+                    font-weight: 600;
+                }
+            
+               
+        }
+        .ft-width{
+            flex-basis: 30%;
+        }
+
+       
+    }
+    .copywrite{
+        padding-top: 50px;
+        p{
+            text-align: center;
+            color: $fontColor;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
